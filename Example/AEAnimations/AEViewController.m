@@ -7,6 +7,8 @@
 //
 
 #import "AEViewController.h"
+#import "AEAnimationView.h"
+
 
 @interface AEViewController ()
 
@@ -18,6 +20,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [AEAnimationView animations:^{
+        NSLog(@"动画组件");
+    }];
 }
 
 - (void)didReceiveMemoryWarning
